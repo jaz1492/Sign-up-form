@@ -35,7 +35,7 @@ header{
     width: 60%;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 5% auto 0 auto;
 }
 .logo-sm{
     display: none;
@@ -44,11 +44,11 @@ header{
     max-height: 100px;
 }
 h1{
+    font-size: 48px;
     color: #033E8C;
 }
 .btn{
-    margin: 1rem 0;
-    background-color: rgb(230, 164, 65);
+    margin: 2rem 0;
     border-radius: 15px;
     padding: 3px 7.5px;
     font-size: 18px;
@@ -70,11 +70,13 @@ h1{
     background-color: #ddd;
     text-align: left;
     margin-top: 10vh;
-    width: 80%;
+    width: 70%;
     min-height: 40vh;
     margin: 0 auto;
     padding: 10px;
     padding-bottom: 0;
+    box-shadow:
+        0 10px 10px  #3a4650;
 }
 legend{
     padding: 1rem;
@@ -88,7 +90,19 @@ fieldset{
     grid-template-columns: 50% 50%;
     border: none;
 }
+input[type="text"]:valid,input[type="email"]:valid,input[type="password"]:valid{
+    border: 3px solid rgb(30, 185, 75);
+    background-color: rgba(62, 230, 107, 0.493);
+}
+input[type="text"]:invalid,input[type="email"]:invalid,input[type="password"]:invalid{
+    border: 3px solid #e63e44;
+    background-color: #e63e449d;
+}
+input[type="text"],input[type="email"],input[type="password"]:focus{
+    outline: 0;
+}
 .submit-btn{
+    background-color: rgb(230, 164, 65);
     height: 3rem;
     width: 30vw;
 }
@@ -110,6 +124,7 @@ fieldset{
         padding: 0;
         width: 100%;
         border-radius: 0;
+        
     }
     fieldset{
         grid-template: 50%;
