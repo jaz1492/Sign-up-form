@@ -31,6 +31,18 @@ body{
     flex: 1 1 70%;
     background-color: #657a8c;
 }
+header{
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.logo-sm{
+    display: none;
+    padding-right: 25px;
+    max-width: 100px;
+    max-height: 100px;
+}
 h1{
     color: #033E8C;
 }
@@ -45,9 +57,13 @@ h1{
 }
 .register-btn{
     border-radius: 15px 0 0 15px;
+    color: #ddd;
+    background-color: #033E8C;
 }
 .login-btn{
     border-radius: 0 15px 15px 0;
+    color: #ddd;
+    background-color: #033E8C;
 }
 .form-container{
     border-radius: 15px;
@@ -55,7 +71,7 @@ h1{
     text-align: left;
     margin-top: 10vh;
     width: 80%;
-    min-height: 50vh;
+    min-height: 40vh;
     margin: 0 auto;
     padding: 10px;
     padding-bottom: 0;
@@ -64,7 +80,7 @@ legend{
     padding: 1rem;
 }
 fieldset{
-    width: 60%;
+    width: 50%;
     height: 80%;
     margin: 0 auto;
     display: grid;
@@ -72,9 +88,9 @@ fieldset{
     grid-template-columns: 50% 50%;
     border: none;
 }
-fieldset > input{
-    height: 1rem;
-    width: 20px 
+.submit-btn{
+    height: 3rem;
+    width: 30vw;
 }
 .flex{
     display:flex;
@@ -83,6 +99,12 @@ fieldset > input{
 @media (width <= 800px){
     .img-container{
         display: none;
+    }
+    .logo-sm{
+        display: block;
+    }
+    .sign-up-container{
+        min-height: 100vh;
     }
     .form-container{
         padding: 0;
