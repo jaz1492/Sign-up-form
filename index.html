@@ -20,8 +20,6 @@
             <img src="../Sign-up-form/src/ロゴ 01.png" alt="" srcset="" class="logo-sm">
             <h1>Register Now To Be A Member!</h1>
         </header>
-        <button class="btn register-btn">Register</button>
-        <button class="btn login-btn">Login</button>
         <form action="post" >
             <div class="form-container">    
                 <fieldset>    
@@ -29,15 +27,15 @@
                     <label for="first-name">*First Name:<input type="text" placeholder="John" name="first-name" id="first-name" required></label>
                     <label for="last-name">*Last Name:<input type="text" placeholder="Doe" name="last-name" id="last-name" required></label>    
                     <label for="username">*Username: <input type="text" placeholder="anythingGoes" name="username" id="username" required></label>
-                    <label for="email">*Email: <input type="email" placeholder="example@email.com" name="email" id="email" required></label>
+                    <label for="email">*Your Email: <input type="email" placeholder="example@email.com" name="email" id="email" required></label>
                     <label for="password">*Password: <input type="password" id="password" required></label>
                     <label for="confirm-password">*Confirm Password: <input type="password" id="confirm-password" required></label>                
                 </fieldset>
             </div>
-            <input class="btn submit-btn" type="submit" value="Register">
+            <input class="btn submit-btn" type="submit" value="Register" onclick="passwordChecker">
         </form>
-        
-        
+        <p>already a member? <a href="#">click here</a></p>
+        <script src="../Sign-up-form/app.js"></script>
     </div>
 </div>
       

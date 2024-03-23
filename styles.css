@@ -55,23 +55,13 @@ h1{
     cursor: pointer;
     border: none;
 }
-.register-btn{
-    border-radius: 15px 0 0 15px;
-    color: #ddd;
-    background-color: #033E8C;
-}
-.login-btn{
-    border-radius: 0 15px 15px 0;
-    color: #ddd;
-    background-color: #033E8C;
-}
 .form-container{
     border-radius: 15px;
     background-color: #ddd;
     text-align: left;
     margin-top: 10vh;
-    width: 70%;
-    min-height: 40vh;
+    width: 60%;
+    min-height: min(300px, 40vh);
     margin: 0 auto;
     padding: 10px;
     padding-bottom: 0;
@@ -94,6 +84,7 @@ input[type="text"]:valid,input[type="email"]:valid,input[type="password"]:valid{
     border: 3px solid rgb(30, 185, 75);
     background-color: rgba(62, 230, 107, 0.493);
 }
+label[for="email"]{display: block;}
 input[type="text"]:invalid,input[type="email"]:invalid,input[type="password"]:invalid{
     border: 3px solid #e63e44;
     background-color: #e63e449d;
